@@ -46,9 +46,9 @@ class WebpackLoader(object):
                 yield chunk
 
     def get_chunk_url(self, chunk):
-        public_path = chunk.get('publicPath')
-        if public_path:
-            return public_path
+        #public_path = chunk.get('publicPath')
+        #if public_path:
+        #    return public_path
 
         relpath = '{0}{1}'.format(
             self.config['BUNDLE_DIR_NAME'], chunk['name']
